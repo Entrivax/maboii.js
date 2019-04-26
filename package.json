@@ -4,13 +4,19 @@
   "description": "amiibo™ encryption/decryption library",
   "main": "dist/maboii",
   "types": "dist/maboii.d.ts",
+  "homepage": "https://github.com/Entrivax/maboii.js#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Entrivax/maboii.js"
+  },
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "clean": "rm -rf dist"
   },
   "keywords": [
-    "amiibo"
+    "amiibo",
+    "maboii"
   ],
   "author": "Entrivax (entrivax@gmail.com)",
   "license": "MIT",
