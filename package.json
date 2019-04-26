@@ -2,7 +2,7 @@
   "name": "maboii",
   "version": "1.0.0",
   "description": "amiibo™ encryption/decryption library",
-  "main": "dist/maboii.min",
+  "main": "dist/maboii",
   "types": "dist/maboii.d.ts",
   "scripts": {
     "dev": "webpack --mode development",

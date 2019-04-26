@@ -13,7 +13,7 @@ const configCallback = (env: { [key: string]: string }, argv: webpack.Configurat
         },
 
         output: {
-            filename: mode === 'production' ? '[name].min.js' : '[name].js',
+            filename: '[name].js',
             path: path.resolve(__dirname, 'dist'),
             libraryTarget: 'umd',
             library: 'maboiijs',
