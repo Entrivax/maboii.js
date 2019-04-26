@@ -3,9 +3,14 @@ amiibo™ encryption/decryption library.
 This library is a port of the encryption/decryption code from [socram8888/amiitool](https://github.com/socram8888/amiitool).
 
 ## How to use
+### Install the package
+```bash
+npm install maboii
+```
+
 ### Load the keys
 ```js
-const maboii = require('maboiijs');
+const maboii = require('maboii');
 const fs = require('fs');
 
 // Read keys from file

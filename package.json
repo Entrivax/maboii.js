@@ -1,9 +1,9 @@
 {
-  "name": "maboii.js",
+  "name": "maboii",
   "version": "1.0.0",
   "description": "amiibo™ encryption/decryption library",
-  "main": "./dist/amiibo.min.js",
-  "types": "./dist/amiibo.d.ts",
+  "main": "dist/maboii.min",
+  "types": "dist/maboii.d.ts",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
