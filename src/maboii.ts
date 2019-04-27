@@ -1,10 +1,13 @@
 import { MasterKeys, MasterKey } from './MasterKeys';
 import { DerivedKeys } from './DerivedKeys';
 import crypto from 'crypto';
+import * as plainDataUtils from './PlainDataUtils';
 
 const HMAC_POS_DATA = 0x008
 const HMAC_POS_TAG = 0x1B4
 const NFC3D_AMIIBO_SIZE = 540;
+
+export { plainDataUtils };
 
 export function loadMasterKeys(key: number[]): MasterKeys|null {
     let dataKey = readMasterKey(key, 0);
@@ -17,6 +20,7 @@ export function loadMasterKeys(key: number[]): MasterKeys|null {
     
     return new MasterKeys(dataKey, tagKey);
 }
+
 
 function readMasterKey(buffer: number[], offset: number): MasterKey {
     let hmacKey = [];
