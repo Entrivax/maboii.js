@@ -30,10 +30,6 @@ const configCallback = (env: { [key: string]: string }, argv: webpack.Configurat
                     test: /\.tsx?$/,
                     loader: 'ts-loader',
                     exclude: /node_modules/,
-                },
-                {
-                    test: /\.node$/,
-                    use: 'node-loader'
                 }
             ],
         },
